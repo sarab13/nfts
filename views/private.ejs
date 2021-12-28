@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Inserted of Latest <%= latestOwners.length %> Owners</h1>
+    <% for( let i=0; i < latestOwners.length; i++) { %>
+        <h2>Owner-<%= i+1 %> </h2>
+        <h3>Owner Address: <%= latestOwners[i].ownerName %></h3>
+        <h3>Multiplier: <%= latestOwners[i].multiplier %></h3>
+        <h3>Animals Total Count - <%= latestOwners[i].animals.length %></h3>
+        <% for( let j=0; j < latestOwners[i].animals.length; j++  ){ %>
+            <h5> <%= latestOwners[i].animals[j].name %></h5>
+            <% } %>
+        <h3>Sol Patrol Total Count - <%= latestOwners[i].solPatrols.length %></h3>
+        <% for( let j=0; j < latestOwners[i].solPatrols.length; j++  ){ %>
+            <h5> <%= latestOwners[i].solPatrols[j].name %></h5>
+            <% } %>
+        <h3>Created At: <%= latestOwners[i].updatedAt %></h3>
+    <hr>
+    <% } %>
+
+
+    
+</body>
+</html>

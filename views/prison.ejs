@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/logo.png">
+    <title>Sol Patol Gaming Wallet</title>
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="asset/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large d-flex justify-content-between" onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="wallet.html" class="w3-bar-item w3-button">Wallet</a>
+        <a href="table.html" class="w3-bar-item w3-button">Tokenomics</a>
+    </div>
+
+    <div id="main">
+        <header class="wallet">
+            <div class="custom-container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#">
+                        <h4>sol &nbsp patrol</h4>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link w3-button w3-teal w3-xlarge" id="openNav" onclick="w3_open()"><i class="fas fa-bars"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="wallet-text">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-10 d-flex justify-content-around">
+                            <h1 class="solpatrol">Sol Patrol &nbsp;&nbsp;x &nbsp;&nbsp;The Jungle</h1>
+                        </div>
+                        <div class="col-md-8 wallet-form d-flex justify-content-start">
+                            <a><i class="fas fa-search"></i></a>
+                            <form action="/prison" method="post">
+                                <input id="input" type="text" name="address" placeholder="Search Wallet Address">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+        <% if( data.flag == true){ %>
+                <div class="wallet-main">
+                    <div class="row">
+                        <% if(data.multiplier!=null) { %> 
+                        <div class="col-md-6">
+                            <div class="wallet-game border-right-white ">
+                                <% var totalLists=Math.floor(data.solPatrols.length/4)
+                                  var extra=data.solPatrols.length-totalLists*4
+                                  var count=0
+                                  %>
+                                <% for ( let i=0;i < totalLists; i++) { %>
+                                    <ul class="d-flex justify-content-start">
+                                       <% for (let j = count; j < count+4; j++) { %>
+                                        <li>
+                                            <a href="">
+                                                <img src="<%=data.solPatrols[j].name%>" >
+                                            </a>
+                                        </li> 
+
+                                     <%  } %>
+                                    </ul>
+
+                               <% count+=4 } %>
+                                
+                                <ul class="d-flex justify-content-start">
+                                    <% for(let i=count;i < extra+count; i++) { %>
+                                        <li>
+                                            <a href="">
+                                                <img src="<%=data.solPatrols[i].name%>" >
+                                            </a>
+                                        </li> 
+                                    <% } %>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wallet-game">
+                                <% var totalLists=Math.floor(data.animals.length/4)
+                                  var extra=data.animals.length-totalLists*4
+                                  var count=0
+                                  %>
+                                <% for ( let i=0;i < totalLists; i++) { %>
+                                    <ul class="d-flex justify-content-start">
+                                       <% for (let j = count; j < count+4; j++) { %>
+                                        <li>
+                                            <a href="">
+                                                <img src="<%= data.animals[j].name %>" >
+                                            </a>
+                                        </li> 
+
+                                     <%  } %>
+                                    </ul>
+
+                               <% count+=4 } %>
+                                
+                                <ul class="d-flex justify-content-start">
+                                    <% for(let i=count;i < extra+count; i++) { %>
+                                        <li>
+                                            <a href="">
+                                                <img src="<%= data.animals[i].name %>" >
+                                            </a>
+                                        </li> 
+                                    <% } %>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <div class="neon-button">
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span> <h3> <%= data.multiplier %>X </h3>
+                                </a>
+                            </div>
+                        </div>
+                        <% } 
+                        else{  %>
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <h2 class="notfound">Wallet not found!</h2>
+                            </div>
+                            <% } %>
+                    </div>				
+                </div>
+            </div>
+            <% } %>
+        </header>
+        <!-- ==========HEADER CLOSE========== -->
+    </div>
+
+    <section class="wallet-table">
+        <div class="container">
+            <div class="wallet-text">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Leader Board</h1>
+                    </div>
+                    <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">RANK</th>
+                                    <th scope="col">ADDRESS</th>
+                                    <th scope="col">SOL PATROL</th>
+                                    <th scope="col">ANIMAL</th>
+                                    <th scope="col">MULTIPLIER</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                                <% var tableLength=7
+                                if(data.tableData.length < 7){
+                                    tableLength=data.tableData.length
+                                }
+                                 for(let i=0; i < tableLength; i++){ %>
+                                <tr>
+                                    <td><%= i+1 %></td>
+                                    <td><%= data.tableData[i].ownerName %></td>
+                                    <td><%= data.tableData[i].solPatrols.length %></td>
+                                    <td><%= data.tableData[i].animals.length %></td>
+                                    <td><%= data.tableData[i].multiplier %></td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- JavaScripts -->
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+ 
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "10%";
+            document.getElementById("mySidebar").style.width = "10%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+
+        // ===wallet data table=====
+        // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+        $(window).on("load resize ", function() {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({
+                'padding-right': scrollWidth
+            });
+        }).resize();
+
+      
+
+</script>
+</body>
+
+</html>

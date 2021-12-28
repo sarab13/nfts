@@ -1,0 +1,112 @@
+nft-owner-2: 5AS7NnRyfgzhE8T34Aom4rfGeZVhwdFXKaEMmYPp41Dt
+name-1: COM #4269
+name-2: Goose Guys #87
+name-3: Anon #7571
+name-4: Anon #1683
+name-5: Down Under #288
+name-6: Eternal Beings #8532
+name-7: Lucid Dream #159
+name-8: Solutions 568
+name-9: Solutions 46
+name-10: Solutions 1306
+name-11: Sussy Snail #868
+name-12: Sol Lion #2437
+name-13: Solutions 1948
+name-14: COM #6965
+name-15: Inexplicables #2721
+name-16: Inexplicables #2351
+name-17: Lucid Dream #157
+name-18: Solutions 3517
+name-19: COM #2664
+name-20: PPP - OG Cactoon #961
+name-21: Sol Patrol #1990
+name-22: Anon #348
+name-23: Terraform Seed
+name-24: Solbong #2718
+name-25: RareDon #5007
+name-26: Solutions 5139
+name-27: Solutions 2500
+name-28: Solutions 5166
+name-29: Pocket Rocket #470
+name-30: Lucid Dream #123
+name-31: Digi Dino #0540
+name-32: SolMandala 0573
+name-33: DESOLATEs #4655
+name-34: Solutions 1337
+name-35: Ernest In Disguise #3667
+name-36: UNQ Universe | Stargate #6609
+name-37: SolClique #217
+name-38: SolCities Genesis #3879
+name-39: Skull Division #4099
+name-40: Solutions 1453
+name-41: Solsunsets #3090
+name-42: COM #1012
+name-43: Solana Bunny Business #636
+name-44: MB #310
+name-45: Angry Armadillos #1495
+name-46: Solana Shiba Business #34
+name-47: RareDon #394
+name-48: The Neighborhood #3644
+name-49: Anon #1928
+name-50: Legend Frog #192
+name-51: Lucid Dream #156
+name-52: date with death | 09
+name-53: enviroPass | Tier 02  #2956
+name-54: Solutions 3164
+name-55: Anon #6589
+name-56: Solutions 1154
+name-57: EXCHANGE NOTIFICATION NFT
+name-58: Cool Bean #490
+name-59: WipeMyAss #620
+name-60: Digi Dino #0014
+name-61: COM #3646
+name-62: Solutions 2882
+name-63: 24K SPECTRUM #237
+name-65: Solutions 2104
+
+nft-owner-4: 5BHCKhByfqGdpXjoHByy6s7UNwm24xRH6UJVLzNjgKXv
+name-1: Lynn Rapp
+name-2: Aircraft#367
+name-3: Rat Bastard #379
+name-4: Rat Bastard #4290
+name-5: Rat Bastard #350
+name-6: Sol Patrol #1004
+name-7: BilliBox #323
+name-8: Naked Meerkat #5701
+name-9: Rat Bastard #4284
+name-10: Puppet Plague #33
+name-11: Rat Bastard #397
+name-12: BilliBox #323
+name-13: Rat Bastard #539
+name-14: Social Pass #57
+name-15: Rat Bastard #4283
+
+nft-owner-5: F9uKJy6P5vT7dkmdWzZBRio1n17622Y1QPANVheuLyBr
+name-1: Sol Tshirt #2912
+name-2: RowdyRex #913
+name-3: Angomon #682
+name-4: Yōkai #087
+name-5: Graphite Icosahedrons #97
+name-6: Mob Monkie #3
+name-7: SolSnatcher #4838
+name-8: Animal #374
+name-9: Sol Slug - 07142
+name-10: Sol Patrol #439
+name-11: enviroPass | Tier 02  #2741
+name-12: Hellhound #2732
+name-13: Monke ShitBox #4496
+name-14: SolSnatcher #3208
+name-15: Wicked Penguin #3473
+name-16: Yōkai #405
+name-17: Hellhound #70
+name-18: Wicked Penguin #4460
+name-19: Sol Patrol #770
+name-20: SolSnatcher #3100
+name-21: Mob Monkette #2084
+name-22: SolSnatcher #556
+name-23: RowdyRex #272
+name-24: SolSnatcher #8083
+name-25: SolSnatcher #54
+name-26: Wicked Penguin #8116
+name-27: Mob Monkie #98
+name-28: RowdyRex #235

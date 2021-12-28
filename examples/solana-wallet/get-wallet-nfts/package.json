@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "dependencies": {
+        "superagent": "^6.1.0",
+        "theblockchainapi": "^1.0.917"
+    }
+}
